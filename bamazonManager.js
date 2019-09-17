@@ -14,6 +14,7 @@ let connection = mysql.createConnection({
 //  create function to throw error - run menu function
 connection.connect(function (err) {
     if (err) throw err;
+    console.log(keys);
     menu();
 });
 

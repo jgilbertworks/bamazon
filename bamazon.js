@@ -1,10 +1,10 @@
-let mysql = require("mysql");
-let inquirer = require("inquirer");
-var keys = require('./keys.js');
+const mysql = require("mysql");
+const inquirer = require("inquirer");
+const keys = require('./keys.js');
 
 // create connection to sql database
 
-let connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: "127.0.0.1",
     port: 3306,
     user: "root",
