@@ -29,7 +29,11 @@ The products table should have each of the following columns:
 
 Populate this database with around 10 different products. (i.e. Insert “mock” data rows into this database and table).
 
+![sql](https://github.com/jgilbertworks/bamazon/blob/master/assets/images/Screen%20Shot%202019-09-17%20at%206.03.47%20PM.png?raw=true "sql")
+
 Then create a Node application called bamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+
+![table](https://github.com/jgilbertworks/bamazon/blob/master/assets/images/Screen%20Shot%202019-09-17%20at%206.06.16%20PM.png?raw=true "table")
 
 The app should then prompt users with two messages.
 
@@ -67,7 +71,7 @@ If a manager selects Add New Product, it should allow the manager to add a compl
 
 ![my-tweets](https://github.com/jgilbertworks/liribot/blob/master/images/Screen%20Shot%202019-09-04%20at%205.58.43%20PM.png?
 
-![spotify-this-song](https://github.com/jgilbertworks/liribot/blob/master/images/Screen%20Shot%202019-09-04%20at%205.50.05%20PM.png?raw=true "liribot")
+![sql](https://github.com/jgilbertworks/bamazon/blob/master/assets/images/Screen%20Shot%202019-09-17%20at%206.03.47%20PM.png?raw=true "sql")
 
    ![movie-this](https://github.com/jgilbertworks/liribot/blob/master/images/Screen%20Shot%202019-09-04%20at%204.26.40%20PM.png?raw=true "liribot")
 
