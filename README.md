@@ -1,4 +1,4 @@
-# bamazon
+## bamazon
 
 ## Table of Contents 
 
@@ -59,7 +59,7 @@ List a set of menu options:
 
 2. View Low Inventory
 
-3. Add to Inventory
+3. Add to Inventory // Still in progress //
 
 4. Add New Product
 
@@ -79,27 +79,58 @@ If a manager selects Add New Product, it should allow the manager to add a compl
    
 Do not overwrite your file each time you run a command.
 
+# Challenge #3: Supervisor View (Final Level) // Still in progress
+
+Create a new MySQL table called departments. Your table should include the following columns:
+
+1. department_id
+
+2. department_name
+
+3. over_head_costs (A dummy number you set for each department)
+
+Modify the products table so that there’s a product_sales column, and modify your bamazonCustomer.js app so that when a customer purchases anything from the store, the price of the product multiplied by the quantity purchased is added to the product’s product_sales column.
+
+Make sure your app still updates the inventory listed in the products column.
+Create another Node app called bamazonSupervisor.js. Running this application will list a set of menu options:
+
+1. View Product Sales by Department
+
+2. Create New Department
+
+When a supervisor selects View Product Sales by Department, the app should display a summarized table in their terminal/bash window. Use the table below as a guide.
+
+department_id	department_name	over_head_costs	product_sales	total_profit
+01	Electronics	10000	20000	10000
+02	Clothing	60000	100000 40000
+
+The total_profit column should be calculated on the fly using the difference between over_head_costs and product_sales. total_profit should not be stored in any database. You should use a custom alias.
+
+If you can’t get the table to display properly after a few hours, then feel free to go back and just add total_profit to the departments table.
+
+Hint: You may need to look into aliases in MySQL.
+
+Hint: You may need to look into GROUP BYs.
+
+Hint: You may need to look into JOINS.
+
+HINT: There may be an NPM package that can log the table to the console. What’s is it? Good question :)
+
 ### Technologies
 Back-End
 - [ ] JavaScript
 - [ ] Node.js
 - [ ] NPM Packages
-- [ ] Spotify API
-- [ ] Twitter API
+- [ ] MySQL
 
 
 ### Setup 
 ```
-1. git clone https://github.com/jgilbertworks/liribot.git
-2. cd liribot
+1. git clone https://github.com/jgilbertworks/bamazon
+2. cd bamazon
 3. npm install 
-4. node liri.js spotify-this-song '<song name here>'
-5. node liri.js movie-this '<movie name here>'
-6. node liri.js my-tweets
-7. node liri.js do-what-it-says
-8. Review results in the log.txt file or console
-
+4. node bamazon.js or node bamazonManager.js
 ```
 ### Requirements
 
-- Must sign up for developer accouts for Twitter and Spotify to recieve API Keys.
+- Must instal node packages.
